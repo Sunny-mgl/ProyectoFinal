@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Button, Card, Col, Form, InputGroup, ListGroup, Row } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
-import { FilterProductNameThunk, filterProductsThunk, getProductsThunk } from '../store/slice/Products.slice';
+import { FilterProductNameThunk, filterProductsThunk, getProductsThunk } from '../store/slice/products.slice';
 
 
 // https://e-commerce-api-v2.academlo.tech/api/v1/categories
