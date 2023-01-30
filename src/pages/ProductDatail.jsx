@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Card, CardGroup, Carousel, Col, Row } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { filterProductsThunk } from '../store/slice/Products.slice';
+import { filterProductsThunk } from '../store/slice/products.slice';
 
 const ProductDatail = () => {
 
