@@ -10,6 +10,7 @@ import AppNavbar from './components/AppNavbar'
 import LoadingScreen from './components/LoadingScreen'
 import { useSelector } from 'react-redux'
 import { Container } from 'react-bootstrap'
+import ProtectedRoutes from './components/ProtecteRoute'
 
 function App() {
 
@@ -27,7 +28,10 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/product/:id' element={<ProductDatail />} />
             <Route path='/login' element={<Login />} />
-            <Route path='purchases' element={<Purchases />} />
+            <Route element={<ProtectedRoutes />}>
+              {/* esto me ayuda a que si no hago el login no puedo entrar a las compras */}
+              <Route path='purchases' element={<Purchases />} />
+            </Route>
           </Routes>
         </Container>
       </HashRouter>

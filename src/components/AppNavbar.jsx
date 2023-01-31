@@ -1,8 +1,16 @@
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const AppNavbar = () => {
+
+const navigate  = useNavigate()
+    const logOut = () => {
+      localStorage.setItem("token", "")
+      navigate("/login")
+    } // esto es para dejar vacio mi token 
+    //el token sirve para ver si el token esta loegado
+
     return (
         <div>
             <Navbar variant='dark' bg="primary" expand="lg"  size='lg'>
@@ -13,6 +21,7 @@ const AppNavbar = () => {
                         <Nav className="me-auto">
                             <Nav.Link  as={Link} to ='/login'>Login</Nav.Link>
                             <Nav.Link  as={Link} to ='/purchases'>Purchases</Nav.Link>
+                            <Nav.Link onClick={logOut}>Log Out</Nav.Link>
                             <NavDropdown title='Car'id="basic-nav-dropdown"> {/*"Dropdown"*/ } 
                              {/* <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">
