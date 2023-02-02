@@ -29,8 +29,8 @@ const ProductCar = ({ show, handleClose }) => {
                                     <img src={car.product?.images[0].url} style={{ height: 100, objectFit: "contain" }} alt="" />
                                 </Col> 
                                 <Col lg={5}>
-                                    <p><b>{car.product.title}</b></p>
-                                    <p>{car.product.price}</p>
+                                    <p><b>{car.product?.title}</b></p>
+                                    <p>{car.product?.price}</p>
                                 </Col>
                                 <Col lg={2}>
                                    <p className='quantity'> <b>{car.quantity}</b></p>

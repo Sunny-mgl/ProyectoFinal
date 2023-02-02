@@ -70,7 +70,7 @@ const Home = () => {
                         ))
                     } */}
                     {/*el onClick de aqui me ayuda a que cuando hago click me lleve a product details */}
-                    <Row md={2} lg={3} className="g-4">
+                    <Row xs={1} md={2} lg={3} className="g-4">
                         {products.map(product => (
                             <Col key={product.id} >
                                 <Card >
