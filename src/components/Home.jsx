@@ -34,7 +34,7 @@ const Home = () => {
                     {
                         categories.map(category => (
 
-                            <Button key={category.id} onClick={() => dispatch(filterProductsThunk(category.id))} style={{ cursor: "pointer", marginTop: 3}}>
+                            <Button key={category.id} onClick={() => dispatch(filterProductsThunk(category.id))} style={{ cursor: "pointer", marginTop: 3 }}>
                                 {category.name}
                             </Button>
 
@@ -48,7 +48,7 @@ const Home = () => {
                     <h1>Home</h1>
 
                     <br />
-                    <InputGroup className="mb-3" style={{ width: 500 }}>
+                    <InputGroup className="mb-3" style={{ width: 350 }}>
                         <Form.Control
                             placeholder="Search"
                             aria-label="Recipient's username"
@@ -70,28 +70,28 @@ const Home = () => {
                         ))
                     } */}
                     {/*el onClick de aqui me ayuda a que cuando hago click me lleve a product details */}
-                    <Row xs={1} md={2} lg={3} className="g-4">
+                    <Row md={2} lg={3} className="g-4">
                         {products.map(product => (
-                            <Col  key={product.id} >
-                                <Card>
-                                    <Link to={`/product/${product.id}`} style={{textDecoration: "none"}}>
-                                <Card.Img className='hover'
-                                    variant="top" 
-                                    src={product.images?.[0].url} 
-                                    style={{height: 200, objectFit: "contain"}}
-                                    />
-                                    <hr />
-                                    <Card.Body>
-                                <Card.Text>
-                                    {product.brand}
-                                </Card.Text>
-                                <Card.Title>{product.title} </Card.Title>
-                                <br />
-                                <Card.Text>
-                                    Price
-                                </Card.Text>
-                                <Card.Title>{product.price} </Card.Title>
-                            </Card.Body>
+                            <Col key={product.id} >
+                                <Card >
+                                    <Link to={`/product/${product.id}`} style={{ textDecoration: "none" }} className='home-card'>
+                                        <Card.Img className='hover'
+                                            variant="top"
+                                            src={product.images?.[0].url}
+                                            style={{ height: 200, objectFit: "contain" }}
+                                        />
+                                        <hr />
+                                        <Card.Body>
+                                            <Card.Text>
+                                                {product.brand}
+                                            </Card.Text>
+                                            <Card.Title>{product.title} </Card.Title>
+                                            <br />
+                                            <Card.Text>
+                                                Price
+                                            </Card.Text>
+                                            <Card.Title>{product.price} </Card.Title>
+                                        </Card.Body>
                                     </Link>
                                 </Card>
                             </Col>

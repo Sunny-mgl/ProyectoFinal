@@ -30,10 +30,19 @@ function App() {
             <Route path='/login' element={<Login />} />
             <Route element={<ProtectedRoutes />}>
               {/* esto me ayuda a que si no hago el login no puedo entrar a las compras */}
-              <Route path='purchases' element={<Purchases />} />
+              <Route path='/purchases' element={<Purchases />} />
             </Route>
           </Routes>
         </Container>
+        <div className='footer'>
+          <h1 className='academlo'>Academlo</h1>
+          <div className='footer-social'>
+            <i className="fa-brands fa-linkedin-in "></i>
+            <i className="fa-brands fa-instagram"></i>
+            <i className="fa-brands fa-youtube"></i>
+            <hr />
+          </div>
+        </div>
       </HashRouter>
     </div>
   )

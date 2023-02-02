@@ -27,8 +27,14 @@ const submit = (data) => {
 
     return (
         <div>
-            <h1>Login</h1>
-            <Form  onSubmit={handleSubmit(submit)}>
+        
+            <Form className='form' onSubmit={handleSubmit(submit)} style={{width: 300, margin: "auto", marginBottom: 300}}>    
+            <h1 className='login'>Login</h1>
+            <div className='john'>
+                <p> <i className="fa-solid fa-envelope"></i> john@gmail.com</p>
+                <p> <i className="fa-solid fa-lock"></i> john1234</p>
+            </div>
+            <br />
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control 
@@ -52,8 +58,8 @@ const submit = (data) => {
                 {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group> */}
-                <Button variant="primary" type="submit">
-                    Submit
+                <Button  style={{width: 235,}} variant="primary" type="submit">
+                    Login
                 </Button>
             </Form>
         </div>

@@ -16,3 +16,106 @@
 .hover{
   margin-top: 1rem;
 }
+
+.discover{
+  color: rgb(226, 83, 83);
+}
+
+.footer{
+  background-color: rgb(56, 54, 54);
+  padding: 3rem;
+}
+
+.fa-brands{
+  color: white;
+ margin-left: 3rem;
+ margin-right: 3rem;
+  font-size: 30px;
+margin-bottom: 1rem;
+}
+
+.footer-social{
+  text-align: center;
+  
+}
+
+.academlo{
+  color: white;
+  padding: 2rem;
+  font-size: 30px;
+  text-align: center;
+}
+
+.login{
+  text-align: center;
+  margin-right: 13rem;
+  margin-bottom: 2rem;
+}
+
+.form{
+ 
+border: 1px solid rgba(0, 0, 0, 0.075);
+padding: 2rem;
+border-radius: 10px; 
+box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.john{
+  background-color: aquamarine;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.purchases{
+  margin-bottom: 3rem;
+}
+
+
+li{
+  list-style: none;
+}
+
+.quantity{
+  border: 1px solid rgba(0, 0, 0, 0.116);
+  width: 30px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.quantity:hover{
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.home-card{
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.home-card:hover{
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+.rest-plus{
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.input-rest-plus{
+  background-color: seashell;
+  border: none;
+  border-radius: 5px;
+}
+
+.buttonCrd{
+  width: 400px;
+
+}
+
+.buttoncheck{
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
