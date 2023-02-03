@@ -51,7 +51,7 @@ const Purchases = () => {
                                         <p className='quantity'>{purchase.quantity}</p>
                                     </Col>
                                     <Col md={3}>
-                                        <p><b>{purchase.product.price}</b></p>
+                                        <p><b>{purchase.product?.price}</b></p>
                                     </Col>
                                     <br />
                                     

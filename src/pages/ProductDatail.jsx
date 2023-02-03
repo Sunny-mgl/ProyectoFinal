@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Button, Card, CardGroup, Carousel, Col, Row } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate, useParams } from 'react-router-dom';
+import Home from '../components/Home';
 import { carThunk } from '../store/slice/carProduct.slice';
 import { filterProductsThunk } from '../store/slice/products.slice';
 
@@ -35,6 +36,8 @@ const ProductDatail = () => {
 
 
 
+ const [buttonCar, setButtonCar] = useState(1)
+
 
     const plus = () => {
         setButtonCar(buttonCar + 1)
@@ -44,7 +47,7 @@ const ProductDatail = () => {
     const rest = () => {
         setButtonCar(buttonCar - 1)
     }
-    const [buttonCar, setButtonCar] = useState(1)
+   
     const carButton = () => {
         const car = {
             quantity: buttonCar,
@@ -163,7 +166,7 @@ const ProductDatail = () => {
                     </Col>
                 ))}
             </Row>
-
+             
         </div>
     );
 };

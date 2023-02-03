@@ -17,7 +17,7 @@ const ProductCar = ({ show, handleClose }) => {
 
         <Offcanvas placement='end' show={show} onHide={handleClose}> {/*el placement='end' me ayuda a que mi navbar apararesca al final */}
             <Offcanvas.Header closeButton>
-                <Offcanvas.Title>Car</Offcanvas.Title>
+                <Offcanvas.Title>My Shopping Cart</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
             

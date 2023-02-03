@@ -21,9 +21,10 @@ const AppNavbar = () => {
   
 
     return (
-        <div>
-            <Navbar variant='dark' bg="primary" expand="lg" size='lg'>
-                <Container>
+        <div className='nav-position'>
+            <Navbar variant='dark' bg="primary" expand="lg" size='lg' >
+                <Container >
+                    <div className='title'><h4 className='title-name'>Digital Store</h4></div>
                     <Navbar.Brand as={Link} to='/' >Home</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
