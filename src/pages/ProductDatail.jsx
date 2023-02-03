@@ -123,7 +123,8 @@ const ProductDatail = () => {
                         </Col>
                     </Row> 
                     <br />
-                    <Button onClick={carButton} className='buttonCrd'> <i className="fa-solid fa-cart-plus"></i></Button>
+                    <div className='buton-purchases'> <Button onClick={carButton} className='buttonCrd'> <i className="fa-solid fa-cart-plus"></i></Button></div>
+                   
                 </Col>
             </Row>
             <br />

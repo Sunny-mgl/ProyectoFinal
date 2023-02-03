@@ -110,8 +110,11 @@ li{
 }
 
 .buttonCrd{
-  width: 400px;
+  width: 300px;
+}
 
+.buton-purchases{
+  text-align: center;
 }
 
 .buttoncheck{
