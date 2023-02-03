@@ -45,6 +45,7 @@ const ProductDatail = () => {
     }
 
     const rest = () => {
+        if(buttonCar > 1)
         setButtonCar(buttonCar - 1)
     }
    
@@ -104,14 +105,16 @@ const ProductDatail = () => {
                     <h4>{productDetail.title}</h4>
                     <p>{productDetail.description}</p>
                     <br />
-                    <p style={{ color: "gray" }}>Price</p>
+                   
 
                     <Row>
                         <Col lg={6}>
+                             <p style={{ color: "gray" }}>Price</p>
                             <h4>{productDetail.price}</h4>
                         </Col>
 
                         <Col lg={6}>
+                        <p style={{ color: "gray" }}>Quantity</p>
                             <button className='rest-plus' onClick={rest}> <i className="fa-solid fa-minus"></i></button>
                             <input type=""
                             className='input-rest-plus'
